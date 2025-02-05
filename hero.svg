@@ -1,0 +1,57 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hat -->
+  <g id="hat">
+    <path d="M30 40 L70 40 L70 25 L30 25 Z" fill="#ff0000"/>
+    <circle cx="50" cy="25" r="8" fill="#ff0000"/>
+  </g>
+  
+  <!-- Head -->
+  <circle cx="50" cy="45" r="15" fill="#ffd700"/>
+  
+  <!-- Eyes -->
+  <g id="eyes">
+    <!-- White background for eyes -->
+    <circle cx="45" cy="42" r="5" fill="white"/>
+    <circle cx="55" cy="42" r="5" fill="white"/>
+    
+    <!-- Animated eyes -->
+    <circle class="eye left" cx="45" cy="42" r="4" fill="black">
+      <animate id="blinkLeft" attributeName="ry" values="4;0.5;4" dur="4s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+    <circle class="eye right" cx="55" cy="42" r="4" fill="black">
+      <animate id="blinkRight" attributeName="ry" values="4;0.5;4" dur="4s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+  </g>
+  
+  <!-- Nose -->
+  <circle cx="50" cy="47" r="2" fill="#8b4513"/>
+  
+  <!-- Body -->
+  <g id="body">
+    <rect x="35" y="60" width="30" height="20" fill="#0000ff">
+      <animate id="breathe" attributeName="height" values="20;22;20" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Arms -->
+  <g id="arms">
+    <rect class="arm left" x="25" y="60" width="10" height="15" fill="#ffd700">
+      <animate id="swingLeft" attributeName="transform" type="rotate" values="0 35 60;-5 35 60;0 35 60" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect class="arm right" x="65" y="60" width="10" height="15" fill="#ffd700">
+      <animate id="swingRight" attributeName="transform" type="rotate" values="0 65 60;5 65 60;0 65 60" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Legs -->
+  <g id="legs">
+    <rect class="leg left" x="40" y="80" width="8" height="15" fill="#8b4513"/>
+    <rect class="leg right" x="52" y="80" width="8" height="15" fill="#8b4513"/>
+  </g>
+  
+  <!-- Shoes -->
+  <g id="shoes">
+    <rect x="37" y="92" width="14" height="6" rx="2" fill="#654321"/>
+    <rect x="49" y="92" width="14" height="6" rx="2" fill="#654321"/>
+  </g>
+</svg> 

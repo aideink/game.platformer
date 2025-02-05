@@ -1,0 +1,49 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body -->
+  <ellipse cx="50" cy="65" rx="40" ry="30" fill="#8B4513">
+    <animate id="bounce" attributeName="ry" values="30;28;30" dur="1s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Eyes -->
+  <g id="eyes">
+    <g class="eye-group left">
+      <circle cx="35" cy="55" r="10" fill="white"/>
+      <circle class="pupil" cx="35" cy="55" r="6" fill="black">
+        <animate id="lookLeft" attributeName="cx" values="35;33;35" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g class="eye-group right">
+      <circle cx="65" cy="55" r="10" fill="white"/>
+      <circle class="pupil" cx="65" cy="55" r="6" fill="black">
+        <animate id="lookRight" attributeName="cx" values="65;63;65" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <!-- Blinking animation -->
+    <rect class="blink" x="25" y="55" width="20" height="0" fill="#8B4513">
+      <animate id="blinkLeft" attributeName="height" values="0;20;0" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect class="blink" x="55" y="55" width="20" height="0" fill="#8B4513">
+      <animate id="blinkRight" attributeName="height" values="0;20;0" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Angry Eyebrows -->
+  <g id="eyebrows">
+    <path d="M25 45 L45 50" stroke="black" stroke-width="4">
+      <animate id="browLeft" attributeName="d" values="M25 45 L45 50;M25 43 L45 48;M25 45 L45 50" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M75 45 L55 50" stroke="black" stroke-width="4">
+      <animate id="browRight" attributeName="d" values="M75 45 L55 50;M75 43 L55 48;M75 45 L55 50" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Feet -->
+  <g id="feet">
+    <ellipse cx="30" cy="90" rx="15" ry="8" fill="#654321">
+      <animate id="stepLeft" attributeName="cy" values="90;88;90" dur="1s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="70" cy="90" rx="15" ry="8" fill="#654321">
+      <animate id="stepRight" attributeName="cy" values="88;90;88" dur="1s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+</svg> 
